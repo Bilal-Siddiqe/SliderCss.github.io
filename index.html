@@ -38,10 +38,13 @@
         }
 
         .cards {
-            background-color: blue;
+            background-color: red;
             height: 250px;
             width: 200px;
             margin: 5px;
+            animation-name: bgClr;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
 
         .cardContainer:hover {
@@ -51,7 +54,6 @@
         @keyframes slider {
             from {
                 transform: translate(-100%);
-
             }
 
             to {
@@ -62,13 +64,30 @@
         @keyframes slider2 {
             from {
                 transform: translate(100%);
-
             }
 
             to {
                 transform: translate(-100%);
             }
         }
+        
+        @keyframes bgClr {
+            0%{
+                background-color: yellow;
+            }
+
+            50%{
+                background-color: orangered;
+            }
+            75%{
+                background-color: aquamarine;
+            }
+            100%{
+                background-color: pink;
+            }
+    
+        }
+
     </style>
 </head>
 
