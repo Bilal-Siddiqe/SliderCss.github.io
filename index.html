@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideContainer {
+            /* border: 10px solid greenyellow; */
+            padding: 5px;
+            width: 90vw;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .cardContainer {
+            /* border: 2px solid black; */
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            animation: slider;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+        }
+
+        .cardContainer2 {
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            animation: slider2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+        }
+
+        .cards {
+            background-color: blue;
+            height: 250px;
+            width: 200px;
+            margin: 5px;
+        }
+
+        .cardContainer:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes slider {
+            from {
+                transform: translate(-100%);
+
+            }
+
+            to {
+                transform: translate(100%);
+            }
+        }
+
+        @keyframes slider2 {
+            from {
+                transform: translate(100%);
+
+            }
+
+            to {
+                transform: translate(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slideContainer">
+        <div class="cardContainer">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+        </div>
+    </div>
+
+    <div class="slideContainer">
+        <div class="cardContainer2">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
